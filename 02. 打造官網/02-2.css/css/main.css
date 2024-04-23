@@ -1,0 +1,90 @@
+/* 全部的物件 */
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #f1f1f1;
+}
+
+/* navbar: 上方選單 */
+.navbar {
+    overflow: hidden;
+    background-color: #5d82bb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-button {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+
+.icon-button>img {
+    height: 40px;
+}
+
+/* hero: 首頁大封面 */
+.hero {
+    padding: 80px;
+    text-align: center;
+    background-image: url("../img/hero.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+}
+
+.hero>h1 {
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0 30px 0;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.card>img {
+    width: 100%;
+}
+
+.card>p {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+/* footer: 底部 */
+.footer {
+    padding: 10px;
+    text-align: center;
+    background: #9b7c46;
+}
+
+.footer>h4 {
+    color: #fff;
+    padding: 20px;
+}

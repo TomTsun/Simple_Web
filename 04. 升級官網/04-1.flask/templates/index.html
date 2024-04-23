@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}首頁 - 行銷搬進大程式{% endblock %}
+
+{% block main %}
+    
+    <!-- hero: 首頁大封面 -->
+    <div class="hero">
+        <h1>當住進大程式</h1>
+        <p>才知道生活可以這麼舒服</p>
+    </div>
+
+    <div class="container">
+        {% for dt in data %}
+        <a href="/class/{{ dt['id'] }}" class="card">
+            <img src="{{ url_for('static', filename='img/'+dt['img']) }}">
+            <h3>{{ dt['title'] }}</h3>
+            <span>{{ dt['date'] }}</span>
+            <p>{{ dt['description'] }}</p>
+        </a>
+        {% endfor %}
+    </div>
+
+{% endblock %}

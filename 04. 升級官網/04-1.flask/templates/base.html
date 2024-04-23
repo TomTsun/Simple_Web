@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='logo_icon.svg') }}"> 
+    <!-- 引入自訂CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }} ">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/class.css') }} ">
+    <!-- 以下給SEO使用 -->
+    <link rel="canonical" href="https://marketingliveincode.com">
+    <meta name="author" content="Ivan Yang">
+    <meta name="copyright" content="Ivan Yang,  All Rights Reserved">
+    <meta name="title" content="行銷搬進大程式">
+    <meta name="og:title" content="行銷搬進大程式">
+    <meta name="og:site_name" content="Marketing Live in Code">
+    <meta name="twitter:title" content="行銷搬進大程式">
+    <meta name="keywords" content="python 基礎 免費課程 pandas 商業分析">
+    <meta name="description" content="免費Python基礎課程，內容包含Python的變數與基本控制操作，如for、while、if等等，並加上Pandas套件，教您如何進行資料處理、資料清洗、ETL，另外有Matplotlib套件教您如何使用Python進行數據視覺化，Jieba切詞抓取想要的關鍵字">
+    <meta name="og:description" content="免費Python基礎課程，內容包含Python的變數與基本控制操作，如for、while、if等等，並加上Pandas套件，教您如何進行資料處理、資料清洗、ETL，另外有Matplotlib套件教您如何使用Python進行數據視覺化，Jieba切詞抓取想要的關鍵字">
+    <meta name="og:image" content="static/logo_icon.svg">
+    <meta name="twitter:title" content="行銷搬進大程式">
+    <meta name="og:url" content="https://marketingliveincode.com/">
+    <meta name="al:web:url" content="https://marketingliveincode.com/">
+    <meta name="article:publisher" content="https://marketingliveincode.com/">
+</head>
+
+<body>
+
+    <!-- navbar: 上方選單 -->
+    <div class="navbar">
+        <a href="/index" class="icon-button">
+            <img src="{{ url_for('static', filename='img/logo.png') }}"/>
+            行銷搬進大程式
+        </a>
+        <div>
+            <a href="https://marketingliveincode.com/" style="float: right; display: block; color: white; text-align: center; padding: 14px 20px; text-decoration: none;">官方網站</a>
+        </div>
+    </div>
+    
+    {% block main %}{% endblock %}
+
+    <!-- footer: 底部 -->
+    <div class="footer">
+        <h4>©2023 行銷搬進大程式 Marketing Live in Code</h4>
+    </div>
+
+</body>
+
+</html>

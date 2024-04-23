@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}{{ data['title'] }} - 行銷搬進大程式{% endblock %}
+
+{% block main %}
+    
+<div class="row">
+    <div class="columns-50">
+        <img src="{{ url_for('static', filename='img/'+data['img']) }}">
+    </div>
+
+    <div class="columns-50">
+        <h1 class="title">{{ data['title'] }}</h1>
+        <span>{{ data['date'] }}</span>
+        <p class="article">{{ data['article'] }}</p>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,21 @@
+.row {
+    display: flex;
+}
+
+.columns-50 {
+    width: 50%; 
+    padding: 20px;
+}
+
+.columns-50 > img {
+    width: 100%;
+}
+
+.title {
+    letter-spacing: 5px;
+}
+
+.article {
+    letter-spacing: 3px;
+    line-height: 32px;
+}
